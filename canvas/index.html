@@ -8,13 +8,47 @@
     <link type="text/css" rel="stylesheet" href="game.css"/>
 </head>
 <body>
-<div>
+<div id="container" style="opacity: 0">
+<div style="float: left;">
     <canvas id="canvas" width="600px" height="600px" style=";border: 1px solid honeydew;">你的浏览器不支持canvas，请跟换其他浏览器试一试
     </canvas>
     <img id="myimage" src="image/stand_cat1.png"/>
 </div>
+<div style="float: left;height: 600px;">
+    <h1 id="tips" style="margin-top: 200px;">快抓住那只喵！</h1>
+    <a class="action-button shadow animate blue" onclick="endop()">play again</a>
+</div>
+</div>
 <script type="text/javascript" src="graph.js"></script>
 <script type="text/javascript">
+    var container = document.getElementById("container")
+    function startop(){
+        var speed = 0.2;
+        var start = self.setInterval(function(){
+           container.style.opacity = speed.toString();
+            speed+=0.2;
+            console.log(speed)
+            if(speed>=1){
+                window.clearInterval(start)
+            }
+        },200)
+    }
+
+    function endop(){
+        var speed = parseInt(container.style.opacity);
+        var end = setInterval(function(){
+            container.style.opacity = speed.toString();
+            speed-=0.2;
+            console.log(speed)
+            if(speed<=0){
+                window.clearInterval(end)
+                window.onload()
+            }
+        },200)
+    }
+    window.onload  = function(){
+        startop()
+    }
     var g = new Graph(121);
     //    定义当前猫的位置的数组
     var localvertex = 60
@@ -22,6 +56,8 @@
 
     g.init(11);
     g.listBorder(11);
+
+    var tips = document.getElementById("tips")
     var canvas = document.getElementById("canvas")
     var ctx = canvas.getContext('2d')
     var circle = {
@@ -81,6 +117,7 @@
         }
         return {x: x, y: y};
     }
+
     //重绘
     function reDraw(p, ctx) {
         var whichObject = [];
@@ -114,6 +151,7 @@
                 g.remarker()
                 if(borderVertext.contains(localvertex)){
                     console.log("猫跑出去咯!")
+                    tips.innerHTML = "额,就差一点,猫跑出去咯!"
                     myimage.style.display = 'none'
                 }else {
                     g.bfs(localvertex)
@@ -195,6 +233,7 @@
                         myimage.style.top = imagelocation.y + "px"
                     }else{
                         myimage.src='image/catch_cat.png'
+                        tips.innerHTML = "好耶！你抓住猫啦!"
                         console.log("你抓住猫啦!")
                     }
                 }
