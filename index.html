@@ -89,14 +89,14 @@
 //            点击的不在当前 localvertex 圆下
             if (p && (arr[i].x + arr[i].r) >= p.x && p.x >= arr[i].x - arr[i].r
                 && (arr[i].y + arr[i].r) >= p.y && p.y >= arr[i].y - arr[i].r
-                && i != localvertex) {
+                && i != localvertex&& !g.num.contains(i)) {
                 whichObject.push(i);
                 //每次点击一次,image坐标改变一次
                 ctx.fillStyle = '#728401';
                 ctx.beginPath();
-//
                 ctx.arc(arr[i].x, arr[i].y, arr[i].r, 0, Math.PI * 2, true);
                 ctx.fill();
+                g.num.push(i)
 //                还有图片移动的6个方向的情况,第一次点击,反方向情况,之后根据路径来
                 //然后获取图片移动之后的位置!
 
