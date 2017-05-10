@@ -22,6 +22,8 @@
 <script type="text/javascript" src="graph.js"></script>
 <script type="text/javascript">
     var container = document.getElementById("container")
+    var tips = document.getElementById("tips")
+
     function startop(){
         var speed = 0.2;
         var start = self.setInterval(function(){
@@ -42,7 +44,7 @@
             console.log(speed)
             if(speed<=0){
                 window.clearInterval(end)
-                window.onload()
+                location.reload()
             }
         },200)
     }
@@ -57,7 +59,6 @@
     g.init(11);
     g.listBorder(11);
 
-    var tips = document.getElementById("tips")
     var canvas = document.getElementById("canvas")
     var ctx = canvas.getContext('2d')
     var circle = {
