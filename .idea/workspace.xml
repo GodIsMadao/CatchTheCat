@@ -21,14 +21,13 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/canvas/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+            <state relative-caret-position="105">
+              <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#4353#4442#0" expanded="false" />
-                <element signature="e#4989#8389#0" expanded="false" />
+                <element signature="e#4370#4459#0" expanded="false" />
+                <element signature="e#5006#8406#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -242,12 +241,12 @@
       <updated>1494330589431</updated>
       <workItem from="1494330591248" duration="10064000" />
       <workItem from="1494378433352" duration="3724000" />
-      <workItem from="1494382334422" duration="21792000" />
+      <workItem from="1494382334422" duration="21890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35580000" />
+    <option name="totallyTimeSpent" value="35678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -377,14 +376,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/canvas/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        <state relative-caret-position="105">
+          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#4353#4442#0" expanded="false" />
-            <element signature="e#4989#8389#0" expanded="false" />
+            <element signature="e#4370#4459#0" expanded="false" />
+            <element signature="e#5006#8406#0" expanded="false" />
           </folding>
         </state>
       </provider>
